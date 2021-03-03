@@ -1,0 +1,16 @@
+In dbConnector I need to:
+-Check if it is a customer logging in or a staff
+-If its a staff only the office manager can create, update delete staff. They can also add people on discounts
+    Receptionist can only create new jobs for customers. If not available then shift or office manager can take over
+-If its a new customer they must register with the system. All data is stored on the database
+-If its a previous customer then it will check if the customer is valued before doing anything else
+-When customer requests jobs to do the system will retrieve information about the tasks such as time and price
+-Customers can pick what jobs they want via the jobID which makes it easier to access all information about it
+-System will then assign the tasks to a job and store information about it on a db
+-It will output price, time to complete and create an invoice for the customer
+-Once jobs are complete it will update properly according to the system
+
+-Make sure all inputs are validated when customers are answering
+-Encrypt username and password for staff login
+-When checking if customer exists it will take their surname and postcode to find the account
+    Two people can have the same first name but not address. This is the best way to locate them

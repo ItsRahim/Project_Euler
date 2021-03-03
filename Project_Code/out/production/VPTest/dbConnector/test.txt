@@ -1,0 +1,37 @@
+	/**
+		 * @param conn
+		 */
+		public boolean closeConnection(Connection conn) throws SQLException
+		{
+			//closing database connection
+			dbConnection.close();
+			throw new UnsupportedOperationException();
+		}
+
+		/**
+		 * @param sql
+		 * @param conn
+		 */
+		public ResultSet read(String sql, Connection conn, String TableName) throws SQLException
+		{
+			Statement rd = dbConnection.createStatement();
+			ResultSet result = rd.executeQuery("SELECT * FROM {TableName}")
+			throw new UnsupportedOperationException();
+		}
+
+		/**
+		 * @param sql
+		 * @param conn
+		 */
+		public int write(String sql, Connection conn) {
+			// TODO - implement I_DBConnectivity_Class.write
+			throw new UnsupportedOperationException();
+		}
+
+		public I_DBConnectivity_Class() {
+			// TODO - implement I_DBConnectivity_Class.I_DBConnectivity_Class
+			throw new UnsupportedOperationException();
+		}
+
+	}
+}
